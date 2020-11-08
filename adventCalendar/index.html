@@ -6,6 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <head>
+        <!-- デフォルトのテーマ  -->
+        <link rel="stylesheet" href="node_modules/flatpickr/dist/flatpickr.min.css">
+        <!-- テーマを変更する場合 : 青色  -->
+        <!-- <link rel="stylesheet" href="flatpickr-calendar/dist/flatpickr.material_blue.min.css"> -->
+        <script src="node_modules/flatpickr/dist/flatpickr.min.js"></script>
+      </head>
+      
+      <body>
+        <!-- input属性に 'date-minndate=today'を追加するだけです -->
+        <form action="">
+          <input id="calendar" data-mindate="today" type="text" />
+
+        </form>
+      
+        <script>
+          // flatpickrの初期化
+          flatpickr('#calendar');
+        </script>
+      
+      </body>
 </body>
 </html>
