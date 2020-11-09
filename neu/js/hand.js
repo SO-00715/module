@@ -22,8 +22,8 @@ for(let i = 0; i < people; i++){
     let drow = deck.splice(random, 1);
     console.log(drow);
     console.log(players.player1);
-    // players[`player${i}`].push(drow);
-    console.log(players[`player1`].push(drow));
+    players[`player1`].push(...drow);
+    console.log(players.player1);
 
 console.log(players.player1);
 players.player1.concat(drow);
